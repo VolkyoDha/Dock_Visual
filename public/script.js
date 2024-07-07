@@ -22,9 +22,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch('/clientes');
         if (response.ok) {
             const clientes = await response.json();
+            clienteList.innerHTML = ''; // Limpiar la lista antes de agregar los nuevos clientes
             clientes.forEach(cliente => {
                 const li = document.createElement('li');
-                li.textContent = `${cliente.nombre} - ${cliente.telefono}`;
+                li.textContent = `${cliente.nombre} - ${cliente.telefono} - Fecha: ${new Date(cliente.fechaRegistro).toLocaleDateString()} - Hora: ${cliente.horaRegistro}`;
                 clienteList.appendChild(li);
             });
         } else {
