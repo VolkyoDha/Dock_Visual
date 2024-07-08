@@ -31,7 +31,7 @@ made by Carlos Lobo and Paola Solano
 
 ## Create a .env file in the root directory with the following content:
 
-    ```bash
+   ```bash
    const uri = "mongodb+srv://admin:<password>@data3apps.owzveqi.mongodb.net/?appName=Data3apps";
    ```
 
@@ -39,17 +39,17 @@ made by Carlos Lobo and Paola Solano
 
    ```bash
    npm start
-    ```
+   ```
 
 ## Using Docker:
 1. **Build the Docker image::**
    
-```bash
+   ```bash
    docker build -t Dock_Visual .
    ```
 
 2. **Build the Docker image::**
    
-```bash
+   ```bash
    docker run -p 3001:3001 --env-file .env Dock_Visual
    ```
