@@ -3,6 +3,8 @@
 
 This application retrieves and displays client and product information from a MongoDB database. The data is displayed in two columns: clients on the left and products on the right.
 
+made by Carlos Lobo and Paola Solano
+
 ## Technologies Used
 
 - Node.js
